@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dishes",
+  "info": {
+    "name": "dish"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "price_in_cents": {
+      "type": "biginteger"
+    },
+    "orders": {
+      "via": "dishes",
+      "collection": "order"
+    }
+  }
+}
