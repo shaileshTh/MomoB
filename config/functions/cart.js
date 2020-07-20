@@ -7,13 +7,20 @@ const cartSubtotal = (cart) => {
     return subTotal 
 }
 
+const cartTaxes = (cart) => {
+    const subTotal = cartSubtotal(cart) 
+
+    return subTotal * TAX_RATE
+}
+
 const cartTotal = (cart) => {
     const subTotal = cartSubtotal(cart)
-    const total = subTotal + subTotal * TAX_RATE;
+    const total = subTotal + cartTaxes(cart)
     return Math.round(total);
 }
 
 module.exports = {
     cartSubtotal,
-    cartTotal   
+    cartTotal,
+    cartTaxes  
 }

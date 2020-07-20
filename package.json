@@ -12,6 +12,7 @@
   "devDependencies": {},
   "dependencies": {
     "knex": "<0.20.0",
+    "pg": "^8.3.0",
     "sqlite3": "latest",
     "strapi": "3.0.5",
     "strapi-admin": "3.0.5",
@@ -22,7 +23,7 @@
     "strapi-plugin-graphql": "^3.0.5",
     "strapi-plugin-upload": "3.0.5",
     "strapi-plugin-users-permissions": "3.0.5",
-    "strapi-utils": "3.0.5",
+    "strapi-utils": "^3.0.5",
     "stripe": "^8.70.0"
   },
   "author": {

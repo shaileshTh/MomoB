@@ -14,9 +14,6 @@
       "via": "orders",
       "dominant": true
     },
-    "number": {
-      "type": "string"
-    },
     "total_in_cents": {
       "type": "biginteger"
     },
@@ -43,6 +40,12 @@
     },
     "customer_name": {
       "type": "string"
+    },
+    "payment_intent_id": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
     }
   }
 }
